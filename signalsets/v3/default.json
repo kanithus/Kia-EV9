@@ -1,2 +1,7 @@
-{ "commands": []
+{ "commands": [
+{ "hdr": "744", "rax": "7AE", "cmd": {"22": "E003"}, "freq": 1,
+  "signals": [
+    {"id": "EV9_HVBAT_SOC", "path": "Battery", "fmt": {"bix": 120, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
+  ]}
+]
 }
