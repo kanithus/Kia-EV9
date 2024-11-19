@@ -40,17 +40,17 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1,
   "signals": [
-    {"id": "EV9_HVBAT_SOC",           "path": "Battery",                      "fmt": {"bix": 32,  "len": 8,                "max": 100,              "div": 2,  "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"},
-    {"id": "EV9_HVBAT_CURRENT",       "path": "Battery",                      "fmt": {"bix": 80,  "len": 16, "sign": true, "max": 200, "min": -200, "div": 10, "unit": "amps"    }, "name": "HV battery current"},
-    {"id": "EV9_HVBAT_VOLT",          "path": "Battery",                      "fmt": {"bix": 96,  "len": 16,               "max": 840, "min": 400,  "div": 10, "unit": "volts"   }, "name": "HV battery voltage"},
-    {"id": "EV9_HVBAT_MAX_TEMP",      "path": "Battery.Modules",              "fmt": {"bix": 112, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery max temperature"},
-    {"id": "EV9_HVBAT_MAX_TEMP",      "path": "Battery.Modules",              "fmt": {"bix": 120, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery min temperature"},
-    {"id": "EV9_HVBAT_PACK_B01_TEMP", "path": "Battery.Modules.Temperatures", "fmt": {"bix": 128, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B01 temperature"},
-    {"id": "EV9_HVBAT_PACK_B02_TEMP", "path": "Battery.Modules.Temperatures", "fmt": {"bix": 136, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B02 temperature"},
-    {"id": "EV9_HVBAT_PACK_B03_TEMP", "path": "Battery.Modules.Temperatures", "fmt": {"bix": 144, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B03 temperature"},
-    {"id": "EV9_HVBAT_PACK_B04_TEMP", "path": "Battery.Modules.Temperatures", "fmt": {"bix": 152, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B04 temperature"},
-    {"id": "EV9_HVBAT_PACK_B05_TEMP", "path": "Battery.Modules.Temperatures", "fmt": {"bix": 160, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B05 temperature"},
-    {"id": "EV9_LVBAT_VOLT",          "path": "Battery",                      "fmt": {"bix": 232, "len": 8,                "max": 25,               "div": 10, "unit": "volts"   }, "name": "Aux battery voltage"}
+    {"id": "EV9_HVBAT_SOC",           "path": "Battery",              "fmt": {"bix": 32,  "len": 8,                "max": 100,              "div": 2,  "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"},
+    {"id": "EV9_HVBAT_CURRENT",       "path": "Battery",              "fmt": {"bix": 80,  "len": 16, "sign": true, "max": 200, "min": -200, "div": 10, "unit": "amps"    }, "name": "HV battery current"},
+    {"id": "EV9_HVBAT_VOLT",          "path": "Battery",              "fmt": {"bix": 96,  "len": 16,               "max": 840, "min": 400,  "div": 10, "unit": "volts"   }, "name": "HV battery voltage"},
+    {"id": "EV9_HVBAT_MAX_TEMP",      "path": "Battery.Temperatures", "fmt": {"bix": 112, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery max temperature"},
+    {"id": "EV9_HVBAT_MAX_TEMP",      "path": "Battery.Temperatures", "fmt": {"bix": 120, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery min temperature"},
+    {"id": "EV9_HVBAT_PACK_B01_TEMP", "path": "Battery.Temperatures", "fmt": {"bix": 128, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B01 temperature"},
+    {"id": "EV9_HVBAT_PACK_B02_TEMP", "path": "Battery.Temperatures", "fmt": {"bix": 136, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B02 temperature"},
+    {"id": "EV9_HVBAT_PACK_B03_TEMP", "path": "Battery.Temperatures", "fmt": {"bix": 144, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B03 temperature"},
+    {"id": "EV9_HVBAT_PACK_B04_TEMP", "path": "Battery.Temperatures", "fmt": {"bix": 152, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B04 temperature"},
+    {"id": "EV9_HVBAT_PACK_B05_TEMP", "path": "Battery.Temperatures", "fmt": {"bix": 160, "len": 8,  "sign": true, "max": 80,  "min": -40,             "unit": "celsius" }, "name": "HV battery pack B05 temperature"},
+    {"id": "EV9_LVBAT_VOLT",          "path": "Battery",              "fmt": {"bix": 232, "len": 8,                "max": 25,               "div": 10, "unit": "volts"   }, "name": "Aux battery voltage"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1,
   "signals": [
@@ -159,13 +159,13 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1,
   "signals": [
-    {"id": "EV9_AVAIL_CHARGE_PWR",    "path": "Battery",         "fmt": {"bix": 128, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available charge power"},
-    {"id": "EV9_AVAIL_DISCHARGE_PWR", "path": "Battery",         "fmt": {"bix": 144, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available discharge power"},
-    {"id": "EV9_CELL_VOLT_DEVIATION", "path": "Battery.Modules", "fmt": {"bix": 160, "len": 8,                "max": 1,                       "div": 50,   "unit": "volts"         }, "name": "Battery cell voltage deviation"},
-    {"id": "EV9_BATT_HEAT_1",         "path": "Battery",         "fmt": {"bix": 184, "len": 8,  "sign": true, "max": 80, "min": 0,                         "unit": "celsius"       }, "name": "Battery heater 1 temperature"},
-    {"id": "EV9_HVBAT_SOH",           "path": "Battery",         "fmt": {"bix": 200, "len": 16,               "max": 100,                     "div": 10,   "unit": "percent"       }, "name": "HV battery state of health",  "suggestedMetric": "stateOfHealth"},
-    {"id": "EV9_HVBAT_WH",            "path": "Battery",         "fmt": {"bix": 224, "len": 16,               "max": 100,           "mul": 2, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "EV9_HVBAT_SOC_DISP",      "path": "Battery",         "fmt": {"bix": 248, "len": 8,                "max": 100,                     "div": 2,    "unit": "percent"       }, "name": "HV battery charge",           "suggestedMetric": "stateOfCharge"}
+    {"id": "EV9_AVAIL_CHARGE_PWR",    "path": "Battery",              "fmt": {"bix": 128, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available charge power"},
+    {"id": "EV9_AVAIL_DISCHARGE_PWR", "path": "Battery",              "fmt": {"bix": 144, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available discharge power"},
+    {"id": "EV9_CELL_VOLT_DEVIATION", "path": "Battery.Modules",      "fmt": {"bix": 160, "len": 8,                "max": 1,                       "div": 50,   "unit": "volts"         }, "name": "Battery cell voltage deviation"},
+    {"id": "EV9_BATT_HEAT_1",         "path": "Battery.Temperatures", "fmt": {"bix": 184, "len": 8,  "sign": true, "max": 80, "min": 0,                         "unit": "celsius"       }, "name": "Battery heater 1 temperature"},
+    {"id": "EV9_HVBAT_SOH",           "path": "Battery",              "fmt": {"bix": 200, "len": 16,               "max": 100,                     "div": 10,   "unit": "percent"       }, "name": "HV battery state of health",  "suggestedMetric": "stateOfHealth"},
+    {"id": "EV9_HVBAT_WH",            "path": "Battery",              "fmt": {"bix": 224, "len": 16,               "max": 100,           "mul": 2, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "EV9_HVBAT_SOC_DISP",      "path": "Battery",              "fmt": {"bix": 248, "len": 8,                "max": 100,                     "div": 2,    "unit": "percent"       }, "name": "HV battery charge",           "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010A"}, "freq": 1,
   "signals": [
