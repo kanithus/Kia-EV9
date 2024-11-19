@@ -34,6 +34,10 @@
     {"id": "EV9_ODO_KM", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
     {"id": "EV9_ODO_MI", "path": "Trips", "fmt": {"bix": 72, "len": 24, "max": 4294967295, "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
   ]},
+{ "hdr": "7D4", "rax": "7DC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 5,
+  "signals": [
+    {"id": "EV9_STEER_ANGLE", "path": "Control", "fmt": {"bix": 56, "len": 16, "sign": true, "max": 720, "min":-720, "div": 10, "unit": "degrees"      }, "name": "Steering angle"}
+  ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_SOC",     "path": "Battery", "fmt": {"bix": 32,  "len": 8,                "max": 100,              "div": 2,  "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"},
