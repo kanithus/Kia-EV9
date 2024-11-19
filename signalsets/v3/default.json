@@ -148,9 +148,13 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1,
   "signals": [
-    {"id": "EV9_HVBAT_SOH",      "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100,             "div": 10,   "unit": "percent"       }, "name": "HV battery state of health",  "suggestedMetric": "stateOfHealth"},
-    {"id": "EV9_HVBAT_WH",       "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 100, "mul": 2,   "div": 1000, "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "EV9_HVBAT_SOC_DISP", "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100, "mul": 0.5,              "unit": "percent"       }, "name": "HV battery charge",           "suggestedMetric": "stateOfCharge"}
+    {"id": "EV9_AVAIL_CHARGE_PWR",    "path": "Battery",         "fmt": {"bix": 128, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available charge power"},
+    {"id": "EV9_AVAIL_DISCHARGE_PWR", "path": "Battery",         "fmt": {"bix": 144, "len": 16,               "max": 270,                     "div": 100,  "unit": "kilowatts"     }, "name": "Available discharge power"},
+    {"id": "EV9_CELL_VOLT_DEVIATION", "path": "Battery.Modules", "fmt": {"bix": 160, "len": 8,                "max": 1,                       "div": 50,   "unit": "volts"         }, "name": "Battery cell voltage deviation"},
+    {"id": "EV9_BATT_HEAT_1",         "path": "Battery",         "fmt": {"bix": 184, "len": 8,  "sign": true, "max": 80, "min": 0,                         "unit": "celsius"       }, "name": "Battery heater 1 temperature"},
+    {"id": "EV9_HVBAT_SOH",           "path": "Battery",         "fmt": {"bix": 200, "len": 16,               "max": 100,                     "div": 10,   "unit": "percent"       }, "name": "HV battery state of health",  "suggestedMetric": "stateOfHealth"},
+    {"id": "EV9_HVBAT_WH",            "path": "Battery",         "fmt": {"bix": 224, "len": 16,               "max": 100,           "mul": 2, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "EV9_HVBAT_SOC_DISP",      "path": "Battery",         "fmt": {"bix": 248, "len": 8,                "max": 100,                     "div": 2,    "unit": "percent"       }, "name": "HV battery charge",           "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010A"}, "freq": 1,
   "signals": [
