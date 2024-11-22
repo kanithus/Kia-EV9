@@ -14,6 +14,13 @@
     {"id": "EV9_AC_CHRG_TIME",      "path": "Battery.Charging", "fmt": {"bix": 272, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total AC charging time"},
     {"id": "EV9_DC_CHRG_TIME",      "path": "Battery.Charging", "fmt": {"bix": 288, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total DC charging time"}
   ]},
+{ "hdr": "770", "rax": "778", "fcm1": true, "cmd": {"22": "BC04"}, "freq": 1,
+  "signals": [
+    {"id": "EV9_DOOR_RR", "path": "Control.Doors", "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open"},
+    {"id": "EV9_DOOR_RL", "path": "Control.Doors", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open"},
+    {"id": "EV9_DOOR_FR", "path": "Control.Doors", "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open"},
+    {"id": "EV9_DOOR_FL", "path": "Control.Doors", "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open"}
+  ]},
 { "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15,
   "signals": [
     {"id": "EV9_TP_FL",   "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,             "div": 5,             "unit": "psi"     }, "name": "Front left tire pressure",      "suggestedMetric": "frontLeftTirePressure"},
