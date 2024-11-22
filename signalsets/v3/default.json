@@ -43,6 +43,13 @@
     {"id": "EV9_ODO_KM", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
     {"id": "EV9_ODO_MI", "path": "Trips", "fmt": {"bix": 72, "len": 24, "max": 4294967295, "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
   ]},
+{ "hdr": "7D1", "rax": "7D9", "fcm1": true, "cmd": {"22": "C101"}, "freq": 1,
+  "signals": [
+    {"id": "EV9_GEAR_D", "path": "Control.Gear", "fmt": {"bix": 69, "len": 1, "max": 1, "unit": "noyes" }, "name": "In drive"},
+    {"id": "EV9_GEAR_R", "path": "Control.Gear", "fmt": {"bix": 70, "len": 1, "max": 1, "unit": "noyes" }, "name": "In reverse"},
+    {"id": "EV9_GEAR_P", "path": "Control.Gear", "fmt": {"bix": 71, "len": 1, "max": 1, "unit": "noyes" }, "name": "In park"},
+    {"id": "EV9_GEAR_N", "path": "Control.Gear", "fmt": {"bix": 72, "len": 1, "max": 1, "unit": "yesno" }, "name": "In neutral"}
+  ]},
 { "hdr": "7D4", "rax": "7DC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 0.5,
   "signals": [
     {"id": "EV9_STEER_ANGLE", "path": "Control", "fmt": {"bix": 56, "len": 16, "sign": true, "max": 720, "min":-720, "div": 10, "unit": "degrees"      }, "name": "Steering angle"}
