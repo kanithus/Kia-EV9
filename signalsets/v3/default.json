@@ -1,18 +1,18 @@
 { "commands": [
 { "hdr": "744", "rax": "74C", "fcm1": true, "cmd": {"22": "E001"}, "freq": 1,
   "signals": [
-    {"id": "EV9_DC_CHRG_STATE", "path": "Battery", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
+    {"id": "EV9_DC_CHRG_STATE", "path": "Battery.Charging", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
   ]},
 { "hdr": "744", "rax": "74C", "fcm1": true, "cmd": {"22": "E003"}, "freq": 1,
   "signals": [
-    {"id": "EV9_HVBAT_SOC_VCMS",    "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 100,   "div": 2,  "unit": "percent" }, "name": "HV battery charge",      "suggestedMetric": "stateOfCharge"},
-    {"id": "EV9_HVBAT_TARGET_VOLT", "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 6553,  "div": 10, "unit": "volts"   }, "name": "EVSE target current",    "description": "EVSE = Electric vehicle supply equipment"},
-    {"id": "EV9_HVBAT_DC_CHRGNG",   "path": "Battery", "fmt": {"bix": 140, "len": 1,  "max": 1,                "unit": "offon"   }, "name": "DC charging"},
-    {"id": "EV9_HVBAT_TARGET_CURR", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 6553,  "div": 10, "unit": "amps"    }, "name": "EVSE target voltage",    "description": "EVSE = Electric vehicle supply equipment"},
-    {"id": "EV9_HVBAT_AC_CHRG_CNT", "path": "Battery", "fmt": {"bix": 240, "len": 16, "max": 65535,            "unit": "scalar"  }, "name": "Number of AC charges"},
-    {"id": "EV9_HVBAT_CHRG_CNT",    "path": "Battery", "fmt": {"bix": 256, "len": 16, "max": 65535,            "unit": "scalar"  }, "name": "Number of DC charges"},
-    {"id": "EV9_AC_CHRG_TIME",      "path": "Battery", "fmt": {"bix": 272, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total AC charging time"},
-    {"id": "EV9_DC_CHRG_TIME",      "path": "Battery", "fmt": {"bix": 288, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total DC charging time"}
+    {"id": "EV9_HVBAT_SOC_VCMS",    "path": "Battery",          "fmt": {"bix": 120, "len": 8,  "max": 100,   "div": 2,  "unit": "percent" }, "name": "HV battery charge",      "suggestedMetric": "stateOfCharge"},
+    {"id": "EV9_HVBAT_TARGET_VOLT", "path": "Battery.Charging", "fmt": {"bix": 128, "len": 16, "max": 6553,  "div": 10, "unit": "volts"   }, "name": "EVSE target current",    "description": "EVSE = Electric vehicle supply equipment"},
+    {"id": "EV9_HVBAT_DC_CHRGNG",   "path": "Battery.Charging", "fmt": {"bix": 140, "len": 1,  "max": 1,                "unit": "offon"   }, "name": "DC charging"},
+    {"id": "EV9_HVBAT_TARGET_CURR", "path": "Battery.Charging", "fmt": {"bix": 144, "len": 16, "max": 6553,  "div": 10, "unit": "amps"    }, "name": "EVSE target voltage",    "description": "EVSE = Electric vehicle supply equipment"},
+    {"id": "EV9_HVBAT_AC_CHRG_CNT", "path": "Battery.Charging", "fmt": {"bix": 240, "len": 16, "max": 65535,            "unit": "scalar"  }, "name": "Number of AC charges"},
+    {"id": "EV9_HVBAT_CHRG_CNT",    "path": "Battery.Charging", "fmt": {"bix": 256, "len": 16, "max": 65535,            "unit": "scalar"  }, "name": "Number of DC charges"},
+    {"id": "EV9_AC_CHRG_TIME",      "path": "Battery.Charging", "fmt": {"bix": 272, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total AC charging time"},
+    {"id": "EV9_DC_CHRG_TIME",      "path": "Battery.Charging", "fmt": {"bix": 288, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total DC charging time"}
   ]},
 { "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15,
   "signals": [
