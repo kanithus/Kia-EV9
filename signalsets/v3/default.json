@@ -48,7 +48,7 @@
     {"id": "EV9_GEAR_D", "path": "Control.Gear", "fmt": {"bix": 69, "len": 1, "max": 1, "unit": "noyes" }, "name": "In drive"},
     {"id": "EV9_GEAR_R", "path": "Control.Gear", "fmt": {"bix": 70, "len": 1, "max": 1, "unit": "noyes" }, "name": "In reverse"},
     {"id": "EV9_GEAR_P", "path": "Control.Gear", "fmt": {"bix": 71, "len": 1, "max": 1, "unit": "noyes" }, "name": "In park"},
-    {"id": "EV9_GEAR_N", "path": "Control.Gear", "fmt": {"bix": 72, "len": 1, "max": 1, "unit": "yesno" }, "name": "In neutral"}
+    {"id": "EV9_GEAR_N", "path": "Control.Gear", "fmt": {"bix": 79, "len": 1, "max": 1, "unit": "yesno" }, "name": "In neutral"}
   ]},
 { "hdr": "7D4", "rax": "7DC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 0.5,
   "signals": [
